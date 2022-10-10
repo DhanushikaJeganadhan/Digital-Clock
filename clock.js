@@ -18,6 +18,10 @@ function updateTime(){
     minut.innerHTML=m
     secound.innerHTML=s
     ampm.innerHTML=am
+
+    setTimeout(()=>{
+        updateTime()
+    },1000)
     
 }
 updateTime();
